@@ -41,6 +41,12 @@
 	  "!**/src/components/Calculator/",
 	  "!**/src/utilities/"
     ],
+	"testMatch": [
+		"**/__tests__/**/*.[jt]s?(x)",
+		"**/?(*.)+(spec|test).[tj]s?(x)"
+		"**/src/components/Calculator/?(*.)+(spec|test).[tj]s?(x)"
+		"**/src/utilities/?(*.)+(spec|test).[tj]s?(x)"
+	],
     "coverageThreshold": {
         "global": {
             "statements": 100,
