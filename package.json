@@ -49,7 +49,7 @@
             "lines": 100
         }
     }
-  }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
