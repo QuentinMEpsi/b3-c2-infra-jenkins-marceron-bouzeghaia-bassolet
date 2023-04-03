@@ -5,16 +5,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh "sudo npm install"
+                sh "sudo npm run build"
+                echo 'Finished building!'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+				
+				// Build avec config de test
+				
+				// Run test
+				
+				// Si pas de bug, on continue
+                echo 'Finished testing!'
             }
         }
     }
