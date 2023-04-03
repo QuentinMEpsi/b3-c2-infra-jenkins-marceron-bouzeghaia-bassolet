@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 bat "npm install"
-                bat "npm test"
+                bat "npm test --watchAll"
                 echo 'Finished testing!'
             }
         }
