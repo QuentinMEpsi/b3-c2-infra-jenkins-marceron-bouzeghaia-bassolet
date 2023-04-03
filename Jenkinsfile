@@ -6,8 +6,8 @@ pipeline {
             steps {
                 echo 'Testing..'
                 bat "npm install"
-                bat "npm run build"
-                bat "npm test"
+                bat "npm exec -- jest --showConfig"
+				bat "npm test"
                 echo 'Finished testing!'
             }
         }
