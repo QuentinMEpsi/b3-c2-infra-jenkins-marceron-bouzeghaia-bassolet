@@ -6,7 +6,8 @@ pipeline {
             steps {
                 echo 'Testing..'
                 bat "npm install"
-                bat "npm react-scripts test --watchAll=false"
+                bat "npm run build"
+                bat "npm test"
                 echo 'Finished testing!'
             }
         }
