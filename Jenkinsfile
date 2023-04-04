@@ -10,7 +10,6 @@ pipeline {
                 echo 'Finished building!'
             }
         }
-		
         stage('Test') {
             steps {
                 echo 'Testing..'
